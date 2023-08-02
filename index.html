@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Application Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>Employee Application Form</h1>
+    <div class="container">
+        <div class="left-section">
+            <h2>REGISTER HERE :</h2>
+            <br>
+            <form id="register" method="post">
+                <input type="text" name="email" id="Email" placeholder="Email" required>
+                <br><br>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <br><br>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                <br><br>
+                <select name="security-question" id="selectors">
+                    <option value="" selected>Security Questions</option>
+                    <option value="Question 1">Your first pet name?</option>
+                    <option value="Question 2">Your first school name?</option>
+                    <option value="Question 3">Your first social media app?</option>
+                    <option value="Question 4">Other?</option>
+                </select>
+                <br><br>
+                <textarea id="address" name="address" rows="4" placeholder="Address"></textarea>
+                <br><br>
+                <h2>QUALIFICATIONS :</h2>
+                <br>
+                <select name="University name" id="select_university">
+                    <option value="" selected>Select University</option>
+                    <option value="Question 1">GGSIPU</option>
+                    <option value="Question 2">DTU</option>
+                    <option value="Question 3">NIT DELHI</option>
+                    <option value="Question 4">NSUT</option>
+                    <option value="Question 5">IIT DELHI</option>
+                </select>
+                <br><br>
+                <select name="Highest qualification" id="highest_university">
+                    <option value="" selected>Highest Qualification</option>
+                    <option value="Question 1">Elementary Pass</option>
+                    <option value="Question 2">Secondary Pass</option>
+                    <option value="Question 3">Intermediate Pass</option>
+                    <option value="Question 4">Undergraduate</option>
+                    <option value="Question 5">Postgraduate</option>
+                </select>
+                <br><br>
+                <select name="Grade Points" id="grade_points">
+                    <option value="" selected>Grade Points</option>
+                    <option value="Question 1">10</option>
+                    <option value="Question 2">9+</option>
+                    <option value="Question 3">8+</option>
+                    <option value="Question 4">7+</option>
+                    <option value="Question 5">Below 7</option>
+                </select>
+                <br><br>
+                <!-- <button type="submit" class="submit-btn">Submit Application</button> -->
+            </form>
+        </div>
+        <div class="right-section">
+            <h2>YOUR DETAILS : </h2>
+            <br>
+            <input type="text" id="first name" name="first-name" placeholder="First Name ">
+            <br><br>
+            <input type="text" id="last name" name="last-name" placeholder="Last Name ">
+            <br><br>
+            <label>Relocation Required:</label>
+            <input type="radio" id="relocation-yes" name="relocation" required>
+            &nbsp;
+            <span id="yes">Yes</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="relocation-no" name="relocation" required>
+            <span id="no">No</span>
+            <br><br>
+            <select name="Country" id="country">
+                <option value="" selected>Country</option>
+                <option value="Question 1">India</option>
+                <option value="Question 2">U.S.A</option>
+                <option value="Question 3">U.K</option>
+                <option value="Question 4">France</option>
+                <option value="Question 5">Germany</option>
+            </select>
+            <br><br>
+            <input type="tel" name="phone number" id="phone number" placeholder="Phone Number">
+            <br><br>
+            <input type="text" name="dob" id="DOB" placeholder="dd/mm/yy">
+            <br><br><br>
+            <input type="file" id="image" name="image" multiple accept="image/*" required>
+
+        </div>
+        <button type="submit" class="submit-btn">Submit Application</button>
+    </div>
+    
+</body>
+</html>
